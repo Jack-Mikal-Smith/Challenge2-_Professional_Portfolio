@@ -1,2 +1,2 @@
-# Challenge2-_Professional_Portfolio
+# Challenge2-ProfessionalPortfolio
 Repository for Module 2 Challenge: Professional Portfolio
