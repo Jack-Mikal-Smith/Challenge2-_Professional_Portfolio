@@ -1,0 +1,38 @@
+:root {--darkBlue:#395B64;
+       --lightBlue:#A5C9CA;
+       --darkGray:#2C3333;
+       --lightGray:#B3B3B4;
+       --white:#E7F6F2;
+       --black:#000000;
+    }
+
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--darkBlue);
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    justify-content: left;
+    align-items: center;
+    padding: 1%;
+    background-color: var(--darkGray);
+    color: var(--white);
+}
+
+nav {
+    display: flex;
+    position: relative;
+}
+
+main {
+    display: flex;
+    position: relative;
+}
+
