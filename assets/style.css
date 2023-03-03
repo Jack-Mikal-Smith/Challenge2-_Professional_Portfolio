@@ -18,21 +18,38 @@ body {
 
 header {
     display: flex;
-    position: fixed;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     padding: 1%;
     background-color: var(--darkGray);
     color: var(--white);
+    min-width: 100%;
 }
 
 nav {
     display: flex;
-    position: relative;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200%;
+    min-height: 150%;
+
+}
+
+nav a {
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 main {
     display: flex;
-    position: relative;
+    justify-content: space-between;
+    min-width: 100%;
 }
 
+h1, h2 {
+    background-color: var(--darkGray);
+}
