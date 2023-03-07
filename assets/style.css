@@ -12,8 +12,8 @@
 }
 
 body {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 header {
@@ -23,19 +23,20 @@ header {
     padding: 1%;
     background-color: var(--darkGray);
     color: var(--white);
-    min-width: 100%;
-}
-
-nav {
-    display: flex;
+    top: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 200%;
-    min-height: 150%;
+    width: 400px;
+}
 
+nav li {
+    display: inline-block !important;
+    margin-right: 5px;
+    width: 100px;
 }
 
 nav a {
@@ -44,12 +45,43 @@ nav a {
     text-decoration: none;
 }
 
-main {
-    display: flex;
-    justify-content: space-between;
-    min-width: 100%;
+.AboutMe {
+    display: block;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-h1, h2 {
-    background-color: var(--darkGray);
+.photo {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, nav a, nav ul {
+    background-color: transparent;
+}
+
+footer {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+}
+
+.projects {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.Horiseon {
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .Horiseon{
+        min-width: 50%;
+    }
 }
